@@ -1,6 +1,6 @@
 package example.redis.redisexample.redis.controller;
 
-import example.redis.redisexample.redis.service.ContentServiceImpl;
+import example.redis.redisexample.redis.service.ContentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -20,7 +20,7 @@ public class ContentRestController {
 
     public final RedisTemplate redisTemplate;
 
-    public final ContentServiceImpl contentService;
+    public final ContentService contentService;
 
     @PostMapping("/content/addContent")
     public ContentDto addContent(HttpServletRequest request, HttpServletResponse response, @RequestBody ContentDto dto) throws Exception {

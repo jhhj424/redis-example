@@ -18,7 +18,7 @@ import java.util.List;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class ContentServiceImpl {
+public class ContentService {
 
     private final ContentRepository repo;
 
